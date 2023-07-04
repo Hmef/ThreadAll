@@ -1,4 +1,4 @@
-package com.ThreadAll.tutorialsPoint.CreatingRunning;
+package com.ThreadAll.tutorialsPoint.RunnableInterface.startRunSleep;
 
 public class TestThread {
 

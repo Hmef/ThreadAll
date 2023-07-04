@@ -1,4 +1,4 @@
-package com.ThreadAll.tutorialsPoint.CreatingRunning;
+package com.ThreadAll.tutorialsPoint.RunnableInterface.startRunSleep;
 
 public class RunnableDemo implements Runnable {
 
@@ -21,7 +21,8 @@ public class RunnableDemo implements Runnable {
 			}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println(" Thread " + threadName + " interrupted");
 		}
 		System.out.println(" ==> Thread " + threadName + " exiting. ");
 	}
