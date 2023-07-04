@@ -20,7 +20,7 @@ public class ThreadDemo extends Thread {
 	public void start() {
 		System.out.println("Starting " + threadName);
 		if(t == null) {
-			t = new Thread(this, threadName); ///////
+			t = new Thread(this, threadName); /////// more example 
 			t.start();
 		}
 	}
