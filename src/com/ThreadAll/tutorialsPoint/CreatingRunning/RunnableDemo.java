@@ -8,14 +8,12 @@ public class RunnableDemo implements Runnable{
 	RunnableDemo(String name) {
 		
 		threadName = name;
-		System.out.println(" ");
-		System.out.println(" ===== Creating " + threadName + " ===== ");
-		System.out.println(" ");
+		System.out.println(" Creating " + threadName);
+
 	}
 	
 	public void run() {
 		System.out.println(" Running " + threadName);
-		System.out.println(" ");
 		for(int i=4; i>0; i--) {
 			System.out.println(" Thread " + threadName + " , " + i );
 			//Thread.sleep(50);	
@@ -23,14 +21,12 @@ public class RunnableDemo implements Runnable{
 		System.out.println(" ==> Thread " + threadName + " exiting. ");
 	}
 
-	/*
 	public void start() {
-		System.out.println(" ");
 		System.out.println(" Starting " + threadName);
 		if(t == null) {
 			t = new Thread(this, threadName);
 			t.start();
 		}	
-	} */
+	} 
 
 }
