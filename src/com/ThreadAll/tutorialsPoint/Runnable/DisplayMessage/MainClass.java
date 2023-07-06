@@ -12,6 +12,8 @@ public class MainClass {
 		//thread1.setPriority(3);
 		System.out.println(" Starting hello thread ..... ");
 		thread1.start();
+		
+		System.out.println(" thread1 Id : " + thread1.getId());
 
 		Runnable bye = new DisplayMessage("Goodbye");
 		Thread thread2 = new Thread(bye);
@@ -20,9 +22,18 @@ public class MainClass {
 		thread2.setName("bye");
 		thread2.setDaemon(true);
 		System.out.println(" Starting Goodbye thread ..... ");
+		
 		System.out.println(" before start() method - thread2 is Alive ?? " + thread2.isAlive());
-		thread2.start();
+		thread2.start();  // start()
 		System.out.println(" after start() method - thread2 is Alive ?! " + thread2.isAlive());
+		System.out.println(" thread2 is a Daemon ?? " + thread2.isDaemon());
+		System.out.println(" thread2 is interrupted ? " + thread2.isInterrupted());
+		
+		System.out.println(" thread2 Id : " + thread2.getId());
+		System.out.println(" thread2 getContextClassLoader() : " + thread2.getContextClassLoader());
+		System.out.println(" thread2 getThreadGroup() : " + thread2.getThreadGroup());
+		
+		System.out.println(" thread2 toString() display name, priority, group ==> " + thread2.toString());
 
 		
 		/*
