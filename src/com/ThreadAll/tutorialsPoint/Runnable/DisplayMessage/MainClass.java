@@ -23,9 +23,10 @@ public class MainClass {
 		*/
 		
 		System.out.println(" Starting thread3 ..... ");
-		Thread thread3 = new GuessANumber(27);
+		Thread thread3 = new GuessANumber(4);
 		thread3.setName("thread3");
 		thread3.start();
+		/*
 		try {
 			thread3.join();
 		} catch (InterruptedException e) {
@@ -33,9 +34,10 @@ public class MainClass {
 			//e.printStackTrace();
 			System.out.println(" Thread interrupted ");
 		}
+		*/
 		
 		System.out.println(" Starting thread4 ...");
-		Thread thread4 = new GuessANumber(72);
+		Thread thread4 = new GuessANumber(2);
 		thread4.setName("thread4");
 		thread4.start();
 		
