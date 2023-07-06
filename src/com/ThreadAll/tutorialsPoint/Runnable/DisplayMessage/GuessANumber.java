@@ -11,10 +11,10 @@ public class GuessANumber extends Thread{
 		int counter = 0;
 		int guess = 0;
 		do {
-			guess = (int) (Math.random() * 10); 
+			guess = (int) (Math.random() * 10 + 1); // 100 + 1
 			System.out.println(this.getName() +" gesses " + guess);
 			counter++;
-			System.out.println(" Counter is " + counter);
+			//System.out.println(" Counter is " + counter);
 		} while (guess != number);
 		System.out.println("** Correct! "+ this.getName() + " in " + counter + " guesses ");
 	}
